@@ -1,7 +1,8 @@
+const constants = require("../Constants/constants.js");
 
  module.exports = class Chips {
     constructor() {
-        this.price = 1.80;
+        this.price = constants.chipsPrice;
     }
 
     get getPrice(){

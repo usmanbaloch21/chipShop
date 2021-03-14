@@ -1,8 +1,8 @@
-
+const constants = require("../Constants/constants.js");
 
 module.exports = class Pie {
     constructor() {
-        this.price = 3.20;
+        this.price = constants.piePrice;
         this.expiryDate;
     }
     get getPrice() {
