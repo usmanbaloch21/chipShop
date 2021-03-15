@@ -10,10 +10,14 @@ module.exports = class Basket {
         console.log(product, ": Added in Basket")
         this.products.push(product);
     }
-    gettotalPrice (){
+    get gettotalPrice (){
         for(let i = 0; i < this.products.length; i++){
            this.totalPrice += this.products[i].price;
         }
       return this.totalPrice;
+    }
+    get showProductsInBasket(){
+        console.log("..... Showing Products in Basket .....");
+        return this.products;
     }
 } 
