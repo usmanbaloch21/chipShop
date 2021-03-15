@@ -1,9 +1,10 @@
 const constants = require("../Constants/constants.js");
+const expiryChecker = require("../helperFunctions/expiryChecker.js");
 
 module.exports = class Pie {
-    constructor() {
+    constructor(date) {
         this.price = constants.piePrice;
-        this.expiryDate;
+        this.expiryDate = date;
     }
     get getPrice() {
         return this.price;
@@ -12,7 +13,7 @@ module.exports = class Pie {
     get getExpiryDate(){
         return this.expiryDate;
     }
-    set setExpiryDate(date){
-        this.expiryDate = date;
+    isExpired(){
+        return expiryChecker(this);
     }
 }
