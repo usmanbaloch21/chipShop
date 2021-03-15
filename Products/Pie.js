@@ -12,9 +12,6 @@ module.exports = class Pie {
     get getExpiryDate(){
         return this.expiryDate;
     }
-    /**
-     * @param {any} date
-     */
     set setExpiryDate(date){
         this.expiryDate = date;
     }

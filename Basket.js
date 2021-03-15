@@ -1,5 +1,8 @@
 
 
+const mealDealDiscount = require("./Deals/pieChipsMealDeal");
+const pieExpiryDiscount = require("./Deals/pieExpiryDeal");
+
 module.exports = class Basket {
     constructor(){
         this.products = [];
@@ -20,4 +23,13 @@ module.exports = class Basket {
         console.log("..... Showing Products in Basket .....");
         return this.products;
     }
+    applymealDealDiscount(){
+        this.totalPrice = this.totalPrice - mealDealDiscount(this);
+        return this.totalPrice;
+    }
+    pieExpiryDiscount(){
+        this.totalPrice = this.totalPrice - pieExpiryDiscount(this);
+        return this.totalPrice;
+    }
+
 } 

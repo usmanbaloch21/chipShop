@@ -7,7 +7,6 @@ const numOfChipsInBasket = function(basket){
     for (let i = 0; i < basket.products.length;i++){
         
         if (basket.products[i] instanceof Chips) {
-            console.log("Counting Chipies");
             chipsCount++;
         }
 
