@@ -4,7 +4,7 @@ This program was written using Node details can be found on package.json
 # To run simply write node index.js
 Details about what this program tries to solve is found below
 
-#The Fish and Chip Shop Problem
+# The Fish and Chip Shop Problem
 
 Part 1
 A customer can buy a portion of chips.
