@@ -10,7 +10,7 @@ const pieExpiryDeal = function(basket) {
     let discountValue = 0;
 
     for (let i = 0; i < basket.products.length; i++){
-        if (basket.products[i] instanceof Pie && basket.product[i].expiryDate == currentDate.now().getUTCDate()){
+        if (basket.products[i] instanceof Pie && basket.products[i].expiryDate.getUTCDate() == currentDate.getUTCDate()){
             discountValue += constants.piePrice * constants.pieExpiryDiscount;
         }
     }    
